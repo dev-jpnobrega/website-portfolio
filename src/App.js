@@ -1,11 +1,9 @@
 import React from 'react';
-import './assests/css/main.css';
-import WrapperComponent from './components/wrapper';
+import './assets/css/main.css';
+import WrapperComponent from './components/Wrapper';
 
 const App = () => (    
-  <div>
-    <WrapperComponent />
-  </div>
+  <WrapperComponent />
 );
 
 export default App;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
+import { DispatchContextProvider } from '../../dispatch';
 import Main from '../../pages/Main';
-
 
 const theme = createMuiTheme({
   palette: {
@@ -13,7 +13,9 @@ const theme = createMuiTheme({
 function WrapperComponent(props) {
   return (
     <MuiThemeProvider theme={theme}>
-      <Main { ...props } />  
+      <DispatchContextProvider>
+        <Main { ...props } /> 
+      </DispatchContextProvider>       
     </MuiThemeProvider> 
   )
 };

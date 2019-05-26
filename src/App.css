@@ -1410,7 +1410,7 @@
 
 	body {
 		background-color: #000;
-		background-image: url("./assests/bg.jpg");
+		background-image: url("./assets/bg.jpg");
 		background-size: cover;
 		background-position: top center;
 	}

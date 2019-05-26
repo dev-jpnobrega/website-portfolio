@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "Name": "João Paulo",
+      "LastName": "Nobrega",
+      "title": "JP is a Senior <strong>Software Architect</strong> and C#/JavaScript/React specialist with over 10 years experience in industry",
+      "avatar": "http://cloudfronttestebucket.s3.amazonaws.com/assets/avatar.jpeg",
+      "socialLinks": {
+        "linkedin": "",
+        "medium": "",
+        "github": "",
+        "twitter": "",
+        "email": ""
+      }
+    }
+  ]
+}
