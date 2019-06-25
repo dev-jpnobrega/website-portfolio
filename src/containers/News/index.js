@@ -12,7 +12,7 @@ const News = (props) => {
       type: 'FETCH_NEWS',
       group: 'react',
     })
-  }, []);
+  }, [ ]);
 
   const onChangeNew = ({ type }) => dispatch({
     type: 'SHOW_GROUP_BY_ID',
