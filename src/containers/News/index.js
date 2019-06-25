@@ -1,11 +1,11 @@
 import React, { useContext, useEffect } from 'react';
-import { DispatchContext } from '../../dispatch';
+import { Context } from '../../context';
 
 import Card from '../../components/Card';
 
 const News = (props) => {
-  const [ state, dispatch ] = useContext(DispatchContext);
-  const { news } = state; 
+  const [ state, dispatch ] = useContext(Context);
+  const { news: { news } } = state;
 
   useEffect(() => {
     dispatch({
@@ -20,29 +20,33 @@ const News = (props) => {
   })  
 
   const mapperNewsRender = (news) => {
-    return (
-      news.map((newTo, i) => (
-        <Card
-          key={i}
-          width={500}
-          heigth={500}
-          title={newTo.title}
-          description={newTo.description}
-          imgSrc={newTo.image}
-          link={newTo.link}
-          alt="" 
-        />
-      ))
-    )
+    return news.map((newTo, i) => {
+      return (
+        <div key={i}>
+          <h2 onClick={() => onChangeNew({ type: newTo.group })}>{ newTo.group }</h2>
+          <hr />
+          {
+            newTo.list.map((ned, ined) => (
+              <Card
+                key={ined}
+                width={500}
+                heigth={500}
+                title={ned.title}
+                description={ned.description}
+                imgSrc={ned.image}
+                link={ned.link}
+                alt=""
+              />
+            ))
+          }
+        </div>
+      )
+    });
   }
 
   return (
     <section className="thumbnails">
-      <div>
-        <h2 onClick={() => onChangeNew({ type: 'react' })}>React</h2>
-        <hr />
-        { mapperNewsRender(news) }
-      </div>      
+      { mapperNewsRender(news) }  
     </section>
   )
 }

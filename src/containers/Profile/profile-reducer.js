@@ -1,12 +1,14 @@
-import { fetchUserById } from '../../service/user-serivce'
+import { fetchUserById } from '../../service/user-service'
 import { FETCH_USER_BY_ID } from './profile-actions';
 
-export default (state, action) => {
+export const initialProfileState = { };
+
+export const profileReducer = (state, action) => {
   switch (action.type) {
     case FETCH_USER_BY_ID:
-      const result = fetchUserById({ id: action.id });
-      console.warn('result', result);
-      return { ...result }
+      return { 
+        ...fetchUserById({ id: action.id }),
+      }
     default:
       return state;
   }

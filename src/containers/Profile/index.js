@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react';
-import { DispatchContext } from '../../dispatch';
+import { Context } from '../../context';
 
 import ImageLoader from '../../components/ImageLoader';
 
 const Profile = ({ userId }) => {
-  const [ state, dispatch ] = useContext(DispatchContext);
+  const [ state, dispatch ] = useContext(Context);
   const { user } = state; 
 
   useEffect(() => {
@@ -13,7 +13,6 @@ const Profile = ({ userId }) => {
       id: userId,
     })
   }, []);
-
 
   const renderUser = () => (
     <>

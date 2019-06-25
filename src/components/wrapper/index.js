@@ -1,7 +1,7 @@
 import React from 'react';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
-import { DispatchContextProvider } from '../../dispatch';
+import { Provider } from '../../context';
 import Main from '../../pages/Main';
 
 const theme = createMuiTheme({
@@ -13,9 +13,9 @@ const theme = createMuiTheme({
 function WrapperComponent(props) {
   return (
     <MuiThemeProvider theme={theme}>
-      <DispatchContextProvider>
+      <Provider>
         <Main { ...props } /> 
-      </DispatchContextProvider>       
+      </Provider>       
     </MuiThemeProvider> 
   )
 };
