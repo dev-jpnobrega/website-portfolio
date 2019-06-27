@@ -8,6 +8,7 @@ pipeline {
     environment {
         HOME = '.'
         CI = 'true'
+        NODE_PATH = 'src/'
     }
     stages {
         stage('Install') {
@@ -22,6 +23,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                sh 'printenv'
                 sh 'npm run deploy'
             }
         }
