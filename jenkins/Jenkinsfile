@@ -9,6 +9,11 @@ pipeline {
         CI = 'true'
     }
     stages {
+        stage('Check node version') {
+            steps {
+                sh 'node --version'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'npm install'
