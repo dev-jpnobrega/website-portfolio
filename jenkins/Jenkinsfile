@@ -8,7 +8,7 @@ pipeline {
     environment {
         HOME = '.'
         CI = 'true'
-        NODE_PATH = 'src/'
+        NODE_PATH = './src'
     }
     stages {
         stage('Install') {
