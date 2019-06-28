@@ -23,11 +23,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'ls'
-                sh 'cd build'
-                sh 'ls'
-                sh 'printenv'
-                sh 'npm run deploy'
+                sh 'jenkins/scripts/build.sh'
             }
         }
     }
