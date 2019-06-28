@@ -2,6 +2,7 @@
   "name": "porf-dev-jpnobrega",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@material-ui/core": "^3.8.2",
     "@material-ui/icons": "^3.0.2",
@@ -15,7 +16,7 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "start": "react-scripts start",
-    "build": "react-scripts build --prefix src",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "npm run build && aws s3 sync build/ s3://site-fio-de-amor"
