@@ -3,5 +3,5 @@
 echo 'Inicialize Build React'
 
 set -x
-npm run build --prefix src
+npm run build
 set +x

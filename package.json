@@ -15,7 +15,7 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build --prefix src",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "npm run build && aws s3 sync build/ s3://site-fio-de-amor"
