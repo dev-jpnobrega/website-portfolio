@@ -8,7 +8,6 @@ pipeline {
     environment {
         HOME = '.'
         CI = 'true'
-        NODE_PATH = './src'
     }
     stages {
         stage('Install') {
@@ -23,6 +22,7 @@ pipeline {
         }
         stage('Build') {
             steps {
+                sh 'printenv'
                 sh 'chmod +x ./jenkins/scripts/build.sh'
                 sh './jenkins/scripts/build.sh'
             }
