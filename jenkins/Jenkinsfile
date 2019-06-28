@@ -8,6 +8,7 @@ pipeline {
     environment {
         HOME = '.'
         CI = 'true'
+        NODE_PATH = './'
     }
     stages {
         stage('Install') {
