@@ -41,13 +41,6 @@ const WARN_AFTER_CHUNK_GZIP_SIZE = 1024 * 1024;
 
 const isInteractive = process.stdout.isTTY;
 
-
-console.warn('path.appBuild', path.appBuild);
-console.warn('path.appSrc', path.appSrc);
-console.warn('path.appPath', path.appPath);
-console.warn('path.appIndexJs', path.appIndexJs);
-console.warn('path.appBuild', path.appBuild);
-
 // Warn and crash if required files are missing
 if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
   console.warn('[paths.appHtml, paths.appIndexJs]', [paths.appHtml, paths.appIndexJs]);
@@ -139,6 +132,16 @@ function build(previousFileSizes) {
   console.log('Creating an optimized production build...');
 
   let compiler = webpack(config);
+
+  
+
+  console.warn('path.appBuild', path.appBuild);
+  console.warn('path.appSrc', path.appSrc);
+  console.warn('path.appPath', path.appPath);
+  console.warn('path.appIndexJs', path.appIndexJs);
+  console.warn('path.appBuild', path.appBuild);
+  console.warn('compiler', compiler);
+
   return new Promise((resolve, reject) => {
     compiler.run((err, stats) => {
       let messages;
