@@ -135,11 +135,11 @@ function build(previousFileSizes) {
 
   
 
-  console.warn('path.appBuild', path.appBuild);
-  console.warn('path.appSrc', path.appSrc);
-  console.warn('path.appPath', path.appPath);
-  console.warn('path.appIndexJs', path.appIndexJs);
-  console.warn('path.appBuild', path.appBuild);
+  console.warn('path.appBuild', paths.appBuild);
+  console.warn('path.appSrc', paths.appSrc);
+  console.warn('path.appPath', paths.appPath);
+  console.warn('path.appIndexJs', paths.appIndexJs);
+  console.warn('path.appBuild', paths.appBuild);
   console.warn('compiler', compiler);
 
   return new Promise((resolve, reject) => {
