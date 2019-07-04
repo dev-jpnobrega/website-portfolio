@@ -32,7 +32,7 @@ pipeline {
             steps {
                 withAWS(region:'us-east-1', credentials: '1') {
                     s3Delete(bucket: 'site-fio-de-amor', path:'**/*')
-                    s3Upload(bucket: 'site-fio-de-amor', workingDir:'build', includePathPattern:'**/*');
+                    s3Upload(bucket: 'site-fio-de-amor', workingDir:'/', includePathPattern:'**/*');
                 }
             }            
         }
