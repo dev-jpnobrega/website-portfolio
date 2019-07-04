@@ -23,7 +23,6 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'printenv'
                 sh 'chmod +x ./jenkins/scripts/build.sh'
                 sh './jenkins/scripts/build.sh'
                 sh 'printenv'
@@ -33,7 +32,7 @@ pipeline {
             steps {
                 withAWS(region: env.AWS_REGION, credentials: '1') {
                     s3Delete(bucket: 'site-fio-de-amor', path: '/')
-                    s3Upload(bucket: 'site-fio-de-amor', workingDir: 'public', includePathPattern:'**/*');
+                    s3Upload(bucket: 'site-fio-de-amor', workingDir: 'build', includePathPattern:'**/*');
                 }
             }            
         }
