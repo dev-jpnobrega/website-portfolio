@@ -1,7 +1,8 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+
+set -e
+set -x
 
 echo 'Inicialize Build React'
 
-set -x
 npm run build
-set +x
