@@ -1,10 +1,10 @@
 
 import React from 'react';
 import './assets/css/main.css';
-import WrapperComponent from './components/Wrapper';
+import WrapperComponent from './src/components/Wrapper';
 
 const App = () => (    
-  <WrapperComponent/>
+  <WrapperComponent />
 );
 
 export default App;
