@@ -5,4 +5,6 @@ set -x
 
 echo 'Inicialize Build React'
 
+ls
+
 npm run build
