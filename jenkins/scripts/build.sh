@@ -7,4 +7,8 @@ echo 'Inicialize Build React'
 
 ls
 
+cd src
+
+ls
+
 npm run build
