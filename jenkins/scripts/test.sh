@@ -6,6 +6,6 @@ echo 'Inicialize JEST test'
 echo 'runner Jest (https://facebook.github.io/jest/).'
 
 cd ./
-ls
+ls 
 
 npm test

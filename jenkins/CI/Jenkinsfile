@@ -2,13 +2,11 @@ pipeline {
     agent {
         docker {
             image 'node:8-alpine'
-            args '-p 3000:3000'
         }
     }
     environment {
         HOME = '.'
         CI = true
-        NODE_PATH = '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
     }
     stages {
         stage('Install') {
@@ -25,7 +23,7 @@ pipeline {
             steps {
                 sh 'printenv'
                 sh 'chmod +x ./jenkins/scripts/test.sh'
-                sh 'sudo ./jenkins/scripts/test.sh'
+                sh './jenkins/scripts/test.sh'
             }
         }
     }
