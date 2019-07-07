@@ -113,10 +113,6 @@
       "web.jsx",
       "jsx",
       "node"
-    ],
-    "watchPlugins": [
-      "C:\\Projects\\Natura\\portfolio\\node_modules\\jest-watch-typeahead\\filename.js",
-      "C:\\Projects\\Natura\\portfolio\\node_modules\\jest-watch-typeahead\\testname.js"
     ]
   },
   "babel": {
