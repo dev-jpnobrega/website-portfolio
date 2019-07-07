@@ -10,5 +10,7 @@ echo 'runner Jest (https://facebook.github.io/jest/).'
 
 cd ./
 
+ls
+
 set -x
 npm test
