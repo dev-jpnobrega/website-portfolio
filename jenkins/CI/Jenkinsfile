@@ -23,7 +23,9 @@ pipeline {
         }
         stage('Test') {
             steps {
-                 sh 'npm test'
+                sh 'printenv'
+                sh 'chmod +x ./jenkins/scripts/test.sh'
+                sh './jenkins/scripts/test.sh'
             }
         }
     }
