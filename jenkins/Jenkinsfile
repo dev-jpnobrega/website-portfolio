@@ -30,9 +30,6 @@ pipeline {
             }
         }
         stage('Deploy') {
-            when {
-                
-            }
             steps {
                 withAWS(region: env.AWS_REGION, credentials: '1') {
                     s3Delete(bucket: env.BUCKET_NAME, path: '/')
