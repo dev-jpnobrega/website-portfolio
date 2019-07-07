@@ -3,7 +3,7 @@
 echo 'Inicialize JEST test'
 
 set -x
-# npm install --save-dev cross-env
+npm install -g react-scripts
 set +x
 
 echo 'runner Jest (https://facebook.github.io/jest/).'
@@ -11,6 +11,8 @@ echo 'runner Jest (https://facebook.github.io/jest/).'
 cd ./
 
 ls
+
+react-scripts --version
 
 set -x
 npm test
