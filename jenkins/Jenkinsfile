@@ -9,6 +9,7 @@ pipeline {
         HOME = '.'
         CI = true
         AWS_REGION = 'us-east-1'
+        BUCKET_NAME = 'site-fio-de-amor'
     }
     stages {
         stage('Install') {
@@ -29,10 +30,13 @@ pipeline {
             }
         }
         stage('Deploy') {
+            when {
+                
+            }
             steps {
                 withAWS(region: env.AWS_REGION, credentials: '1') {
-                    s3Delete(bucket: 'site-fio-de-amor', path: '/')
-                    s3Upload(bucket: 'site-fio-de-amor', workingDir: 'build', includePathPattern:'**/*');
+                    s3Delete(bucket: env.BUCKET_NAME, path: '/')
+                    s3Upload(bucket: env.BUCKET_NAME, workingDir: 'build', includePathPattern:'**/*');
                 }
             }            
         }
