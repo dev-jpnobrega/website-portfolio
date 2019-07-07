@@ -7,5 +7,8 @@ set -x
 set +x
 
 echo 'runner Jest (https://facebook.github.io/jest/).'
+
+cd ./
+
 set -x
 npm test
