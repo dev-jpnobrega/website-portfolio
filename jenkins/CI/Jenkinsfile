@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh 'printenv'
                 sh 'chmod +x ./jenkins/scripts/test.sh'
-                sh './jenkins/scripts/test.sh'
+                sh 'sudo ./jenkins/scripts/test.sh'
             }
         }
     }
