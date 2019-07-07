@@ -26,7 +26,6 @@ pipeline {
             steps {
                 sh 'chmod +x ./jenkins/scripts/build.sh'
                 sh './jenkins/scripts/build.sh'
-                sh 'printenv'
             }
         }
         stage('Deploy') {
