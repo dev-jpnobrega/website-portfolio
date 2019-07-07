@@ -8,7 +8,7 @@ pipeline {
     environment {
         HOME = '.'
         CI = true
-        NODE_PATH = '/var/lib/jenkins/workspace/CI'
+        NODE_PATH = '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
     }
     stages {
         stage('Install') {
