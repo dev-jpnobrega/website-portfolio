@@ -8,4 +8,4 @@ echo 'runner Jest (https://facebook.github.io/jest/).'
 cd ./
 ls 
 
-npm test
+npm run test
