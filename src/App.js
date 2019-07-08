@@ -2,10 +2,8 @@
 import React from 'react';
 import './assets/css/main.css';
 
-const WrapperComponent = require('./components/wrapper');
+import WrapperComponent from './components/wrapper';
 
-const App = () => (    
+export default () => (
   <WrapperComponent />
 );
-
-export default App;
