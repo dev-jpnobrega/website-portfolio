@@ -22,7 +22,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'chmod +x ./jenkins/scripts/test.sh'
-                sh '/bin/bash -e ./jenkins/scripts/test.sh'
+                sh './jenkins/scripts/test.sh'
             }
         }
     }
