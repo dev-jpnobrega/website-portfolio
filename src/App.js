@@ -4,7 +4,7 @@ import './assets/css/main.css';
 import WrapperComponent from './components/Wrapper';
 
 const App = () => (    
-  <WrapperComponent/>
+  <WrapperComponent />
 );
 
 export default App;
