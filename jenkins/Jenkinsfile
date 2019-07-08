@@ -6,7 +6,6 @@ pipeline {
     }
     environment {
         HOME = '.'
-        CI = true
         AWS_REGION = 'us-east-1'
         BUCKET_NAME = 'site-fio-de-amor'
     }
