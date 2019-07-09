@@ -8,16 +8,12 @@ pipeline {
         HOME = '.'
         AWS_REGION = 'us-east-1'
         BUCKET_NAME = 'site-fio-de-amor'
+        NODE_ENV = 'production'
     }
     stages {
         stage('Install') {
             steps {
-                sh 'npm install'
-            }
-        }
-        stage('ESlint') {
-            steps {
-                sh 'npm run lint'
+                sh 'npm install --production'
             }
         }
         stage('Build') {
