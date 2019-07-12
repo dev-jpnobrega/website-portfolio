@@ -3,7 +3,7 @@ import { Context } from '../../context';
 
 import Card from '../../components/Card';
 
-const News = (props) => {
+function News(props) {
   const [ state, dispatch ] = useContext(Context);
   const { news: { news } } = state;
 
@@ -19,7 +19,7 @@ const News = (props) => {
     group: type,
   })  
 
-  const mapperNewsRender = (news) => {
+  function mapperNewsRender(news) {
     return news.map((newTo, i) => {
       return (
         <div key={i}>
