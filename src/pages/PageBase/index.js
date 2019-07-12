@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
-function PageBase() {
+function PageBase(props) {
   return (
     <div id="wrapper">
       <Header { ...props } />
