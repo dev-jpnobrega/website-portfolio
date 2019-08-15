@@ -8,13 +8,13 @@
           "title": "React Hooks - useState",
           "description": "Introduce using react useState (pt-BR)",
           "link": "https://medium.com/@devjpnobrega/primeiros-passos-com-react-hooks-usestate-aa4eeeec5f4e",
-          "image": "http://cloudfronttestebucket.s3.amazonaws.com/assets/reactuseStateimg.png"
+          "image": "https://cloudfronttestebucket.s3.amazonaws.com/assets/reactuseStateimg.png"
         },
         {
           "title": "React Hooks - useEffect",
           "description": "Introduce using react useEffect (pt-BR)",
           "link": "https://medium.com/@devjpnobrega/primeiros-passos-com-react-hooks-useeffect-c3d2f61eb089",
-          "image": "http://cloudfronttestebucket.s3.amazonaws.com/assets/reactuseEffect.jpg"
+          "image": "https://cloudfronttestebucket.s3.amazonaws.com/assets/reactuseEffect.jpg"
         }
       ]
     },
@@ -26,7 +26,19 @@
           "title": "Portifoio - OpenSource",
           "description": "d",
           "link": "https://medium.com/@devjpnobrega/primeiros-passos-com-react-hooks-useeffect-c3d2f61eb089",
-          "image": "http://cloudfronttestebucket.s3.amazonaws.com/assets/fullhd.jpg"
+          "image": "https://cloudfronttestebucket.s3.amazonaws.com/assets/fullhd.jpg"
+        }
+      ]      
+    },
+    {
+      "ordem": 3,
+      "group": "Stencil",
+      "list": [
+        {
+          "title": "Gravity Gamer - Example WebComponent implemented in Stencil",
+          "description": "d",
+          "link": "https://github.com/dev-jpnobrega/stencil-components",
+          "image": "https://raw.githubusercontent.com/dev-jpnobrega/stencil-components/master/foo.png"
         }
       ]      
     }

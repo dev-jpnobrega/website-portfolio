@@ -12,7 +12,7 @@ function Profile({ userId }) {
       type: 'FETCH_USER_BY_ID',
       id: userId,
     })
-  }, []);
+  }, [ userId ]);
 
   function renderUser() {
     return (
