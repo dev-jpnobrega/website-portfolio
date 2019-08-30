@@ -47,8 +47,6 @@ function News(props) {
     });
   }
 
-  console.warn('news', news);
-
   return (
     <section className="thumbnails">
       { mapperNewsRender(news) }  

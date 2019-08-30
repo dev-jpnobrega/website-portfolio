@@ -12,7 +12,6 @@ export const newsReducer = (state, action) => {
         return { ...state, news: [ ...action.news ] };
     case FETCH_NEWS:
       const result = fetchNews(action);
-      console.warn('result', result);
       return { ...state, news: [ ...result ] };
     case SHOW_ALL:
       return state;

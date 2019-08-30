@@ -4,14 +4,14 @@
       "id": 1,
       "Name": "João Paulo",
       "LastName": "Nobrega",
-      "title": "JP is a Senior <strong>Software Architect</strong> and C#/JavaScript/React specialist with over 10 years experience in industry",
-      "avatar": "http://cloudfronttestebucket.s3.amazonaws.com/assets/avatar.jpeg",
+      "title": "JP is a Senior Software Architect and C#/JavaScript/React specialist with over 10 years experience in industry",
+      "avatar": "https://cloudfronttestebucket.s3.amazonaws.com/assets/avatar.jpeg",
       "socialLinks": {
-        "linkedin": "",
-        "medium": "",
-        "github": "",
+        "linkedin": "https://www.linkedin.com/in/jpnobrega",
+        "medium": "https://medium.com/@devjpnobrega",
+        "github": "https://github.com/dev-jpnobrega",
         "twitter": "",
-        "email": ""
+        "email": "subject:joaopaulonobrega@hotmail.com"
       }
     }
   ]

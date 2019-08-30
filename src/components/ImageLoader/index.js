@@ -32,7 +32,7 @@ function ImageLoader({ src, alt, onLoad, onError, width, heigth, classes }) {
         onError={onError}
         alt={alt}
         src={src} 
-        width={width} 
+        width={width}
         heigth={heigth}
       />
     </div>

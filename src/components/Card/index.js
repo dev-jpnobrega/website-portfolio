@@ -15,8 +15,8 @@ function Card({ title, description, link, imgSrc, width, heigth }) {
       <span></span>
       <a target='_blank' href={link} style={isLoading ? { visibility: 'hidden' } : {}}>        
         <ImageLoader 
-          width={500}
-          heigth={500}
+          width={100}
+          heigth={100}
           onLoad={onLoadImage}
           onError={(event) => console.error('Err load image', imgSrc)}
           src={imgSrc}
