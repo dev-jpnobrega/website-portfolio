@@ -1,13 +1,15 @@
 import React from 'react';
 
 import News from '../containers/News';
-
 import PageBase from './PageBase';
 
-const Main = () => (
-  <PageBase>
-    <News />
-  </PageBase>
-)
+function Main() {
+  return (
+    <PageBase>
+      <News />
+    </PageBase>
+  )
+}
+
 
 export default Main;

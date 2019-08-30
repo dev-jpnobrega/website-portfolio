@@ -17,10 +17,10 @@ const style = {
   },
 }
 
-const ImageLoader = ({ src, alt, onLoad, onError, width, heigth, classes }) => {
+function ImageLoader({ src, alt, onLoad, onError, width, heigth, classes }) {
   const [ isLoading, setLoad ] = useState(true);
 
-  const onLoadImage = (event) => {
+  function onLoadImage(event) {
     setLoad(false);
     onLoad(event);
   }
@@ -32,7 +32,7 @@ const ImageLoader = ({ src, alt, onLoad, onError, width, heigth, classes }) => {
         onError={onError}
         alt={alt}
         src={src} 
-        width={width} 
+        width={width}
         heigth={heigth}
       />
     </div>

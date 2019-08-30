@@ -5,16 +5,22 @@
       "group": "React",
       "list": [
         {
+          "title": "React Hooks - useReducer",
+          "description": "Introduce using react useReducer (pt-BR)",
+          "link": "https://medium.com/@devjpnobrega/primeiros-passos-com-react-hooks-usereducer-c435d83643d8",
+          "image": "https://miro.medium.com/max/1355/1*-5TBPgIKsJpWzpt5_5xCYw.png"
+        },
+        {
           "title": "React Hooks - useState",
           "description": "Introduce using react useState (pt-BR)",
           "link": "https://medium.com/@devjpnobrega/primeiros-passos-com-react-hooks-usestate-aa4eeeec5f4e",
-          "image": "http://cloudfronttestebucket.s3.amazonaws.com/assets/reactuseStateimg.png"
+          "image": "https://cloudfronttestebucket.s3.amazonaws.com/assets/reactuseStateimg.png"
         },
         {
           "title": "React Hooks - useEffect",
           "description": "Introduce using react useEffect (pt-BR)",
           "link": "https://medium.com/@devjpnobrega/primeiros-passos-com-react-hooks-useeffect-c3d2f61eb089",
-          "image": "http://cloudfronttestebucket.s3.amazonaws.com/assets/reactuseEffect.jpg"
+          "image": "https://cloudfronttestebucket.s3.amazonaws.com/assets/reactuseEffect.jpg"
         }
       ]
     },
@@ -23,10 +29,28 @@
       "group": "OpenSource",
       "list": [
         {
-          "title": "Portifoio - OpenSource",
+          "title": "React + Hooks + GlobalState + Jenkins",
           "description": "d",
-          "link": "https://medium.com/@devjpnobrega/primeiros-passos-com-react-hooks-useeffect-c3d2f61eb089",
-          "image": "http://cloudfronttestebucket.s3.amazonaws.com/assets/fullhd.jpg"
+          "link": "https://github.com/dev-jpnobrega/website-portfolio",
+          "image": "https://cloudfronttestebucket.s3.amazonaws.com/assets/react-jenkins.png"
+        },
+        {
+          "title": "React + Apollo + GraphQL + Subscription",
+          "description": "d",
+          "link": "https://github.com/dev-jpnobrega/react-graphql-subscription",
+          "image": "https://cloudfronttestebucket.s3.amazonaws.com/assets/graphql-subs.png"
+        }
+      ]      
+    },
+    {
+      "ordem": 3,
+      "group": "Stencil",
+      "list": [
+        {
+          "title": "Gravity Gamer - Example WebComponent implemented in Stencil",
+          "description": "d",
+          "link": "https://github.com/dev-jpnobrega/stencil-components",
+          "image": "https://raw.githubusercontent.com/dev-jpnobrega/stencil-components/master/foo.png"
         }
       ]      
     }

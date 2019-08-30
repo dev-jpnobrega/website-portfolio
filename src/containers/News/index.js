@@ -1,17 +1,20 @@
 import React, { useContext, useEffect } from 'react';
 import { Context } from '../../context';
+import { fetchNews } from '../../service/news-service';
 
 import Card from '../../components/Card';
 
-const News = (props) => {
+function News(props) {
   const [ state, dispatch ] = useContext(Context);
   const { news: { news } } = state;
 
   useEffect(() => {
-    dispatch({
-      type: 'FETCH_NEWS',
-      group: 'react',
-    })
+    fetchNews().then(news => 
+      dispatch({
+        type: 'FETCHED_NEWS',
+        news,
+      })
+    );    
   }, []);
 
   const onChangeNew = ({ type }) => dispatch({
@@ -19,7 +22,7 @@ const News = (props) => {
     group: type,
   })  
 
-  const mapperNewsRender = (news) => {
+  function mapperNewsRender(news) {
     return news.map((newTo, i) => {
       return (
         <div key={i}>
