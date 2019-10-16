@@ -5,5 +5,5 @@ import './assets/css/main.css';
 import WrapperComponent from './components/wrapper';
 
 export default () => (
-  <WrapperComponent />
+  <WrapperComponent prop={1} />
 );
